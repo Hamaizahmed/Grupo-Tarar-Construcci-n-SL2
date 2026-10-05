@@ -61,8 +61,8 @@ img { display: block; max-width: 100%; }
   display: flex; align-items: center; gap: 26px;
 }
 .logo-wrap {
-  width: 128px;
-  height: 68px;
+  width: 118px;
+  height: 66px;
   flex: 0 0 auto;
   display: grid;
   place-items: center;
@@ -74,9 +74,9 @@ img { display: block; max-width: 100%; }
 }
 .logo {
   width: 108px;
-  height: 64px;
+  height: auto;
+  max-height: 62px;
   object-fit: contain;
-  object-position: center;
 }
 .nav { display: flex; align-items: center; gap: 26px; flex: 1; justify-content: flex-end; }
 .nav-link {
@@ -541,8 +541,8 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 900px) {
   .header-shell { min-height: 76px; }
-  .logo-wrap { width: 112px; height: 58px; }
-  .logo { width: 96px; height: 54px; }
+  .logo-wrap { width: 105px; height: 58px; }
+  .logo { width: 96px; max-height: 54px; }
   .menu-toggle { display: block; }
   .nav {
     position: absolute; left: 0; right: 0; top: 100%;
@@ -574,8 +574,8 @@ img { display: block; max-width: 100%; }
 @media (max-width: 620px) {
   .container { width: min(var(--container), calc(100% - 32px)); }
   .header-shell { width: calc(100% - 24px); }
-  .logo-wrap { width: 102px; height: 52px; }
-  .logo { width: 88px; height: 49px; }
+  .logo-wrap { width: 94px; height: 52px; }
+  .logo { width: 86px; max-height: 49px; }
   .hero { min-height: 780px; }
   .hero-vignette { background: linear-gradient(180deg, rgba(4,17,32,.86), rgba(4,17,32,.70) 47%, rgba(4,17,32,.90)); }
   .hero-content { padding: 85px 0 95px; }
